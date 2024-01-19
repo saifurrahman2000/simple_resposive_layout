@@ -5,21 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
     <style>
-        .food{
-            border: 20px;
-            padding: 10px;
-            border-radius: 10px;
+        .container{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+            background-color: bisque;
         }
+        .food{
+            border:2px solid tomato;
+            padding: 10px;
+            border-radius:10px;
+            background-color: aquamarine;
+        }
+        .food img{
+            width: 100%;
+        }
+        /* small device */
+        @media screen and (max-width:2200px){
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        /* medium device */
+        @media screen and (min-width:2201px) and (max-width:2400px) {
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+        }
+        
+        
     </style>
 </head>
 <body>
-    <!-- .container>.food>img[src="images/food.webp"]+h3{Food Item -$}+p{Price:\$$00}+p>lorem20^btn{Buy Now} -->
+    <!-- .container>.food>img[src="images/pngwing.com.png"]+h3{Food Item -$}+p{Price:\$$00}+p>lorem20^btn{Buy Now} -->
     <div class="container">
         <div class="food">
-            <img src="images/food.webp" alt="">
+            <img src="images/pngwing.com.png" alt="">
             <h3>Food Item -1</h3>
             <p>Price:$100</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam explicabo natus cum officiis quam vitae ducimus minima dolor accusamus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aspernatur vitae officiis quaerat facere illo et, dolorem distinctio pariatur facilis.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -2</h3>
+            <p>Price:$200</p>
+            <p>Odio ducimus explicabo excepturi eligendi dolore sunt quia minus earum dolorem expedita! Voluptatem modi, distinctio nemo suscipit quasi dignissimos eos!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -3</h3>
+            <p>Price:$300</p>
+            <p>Natus quam amet beatae architecto quidem, minima officiis at, reiciendis tempora delectus animi omnis non dolor alias repudiandae porro corporis.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -4</h3>
+            <p>Price:$400</p>
+            <p>A amet sunt repellendus itaque dolore sint ipsa doloribus, autem expedita cupiditate consequuntur animi eos sit neque at optio blanditiis!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -5</h3>
+            <p>Price:$500</p>
+            <p>Quae explicabo pariatur odio quas, numquam excepturi accusamus? Libero quaerat, labore explicabo doloribus eos voluptatem! Illum minus optio dolore molestiae!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -6</h3>
+            <p>Price:$600</p>
+            <p>Blanditiis dolor nemo quae eum. Est voluptatem ea vitae perferendis laborum aliquam eligendi numquam, illo atque iusto quisquam voluptates dignissimos?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -7</h3>
+            <p>Price:$700</p>
+            <p>Distinctio et dolores debitis commodi tempora soluta enim similique, eius earum deserunt consequatur, itaque dolorem dicta ipsam ratione aut maxime!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -8</h3>
+            <p>Price:$800</p>
+            <p>Repellat consequatur minus totam provident perspiciatis voluptatem, quibusdam quasi magnam nulla earum possimus est beatae similique, dicta eaque quas. Dolore!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -9</h3>
+            <p>Price:$900</p>
+            <p>Odio rerum, iusto provident quos voluptatibus, magnam iste optio numquam inventore quae commodi cupiditate nostrum praesentium quis libero asperiores deleniti?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -10</h3>
+            <p>Price:$1000</p>
+            <p>Eligendi debitis sed eaque voluptatum inventore alias nihil, nesciunt blanditiis fuga praesentium ipsam. Magnam iure fugiat reprehenderit, itaque ullam mollitia!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -11</h3>
+            <p>Price:$1100</p>
+            <p>Nulla earum consectetur, laudantium quod voluptatem dolor sint incidunt velit, molestiae dolorum, accusantium vero a animi debitis suscipit labore veniam.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="images/pngwing.com.png" alt="">
+            <h3>Food Item -12</h3>
+            <p>Price:$1200</p>
+            <p>Iusto quod aliquid nisi corrupti inventore quas pariatur odio, in asperiores praesentium sequi voluptate. Vitae neque illo commodi magni qui.</p>
             <button>Buy Now</button>
         </div>
     </div>
